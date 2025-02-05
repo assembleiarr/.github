@@ -36,6 +36,6 @@ Nosso compromisso é com a **transparência**, **eficiência** e **inovação** 
 
 ## 📬 Contato  
 📧 Tem alguma dúvida ou sugestão? Entre em contato conosco através do e-mail:  
-[📩 tecnologia@al.rr.leg.br](mailto:tecnologia@al.rr.leg.br)
+[📩 ginfra@al.rr.leg.br](mailto:ginfra@al.rr.leg.br)
 
 💙 Agradecemos por visitar nosso repositório! Junte-se a nós nessa jornada rumo à **inovação e transparência** no serviço público.
