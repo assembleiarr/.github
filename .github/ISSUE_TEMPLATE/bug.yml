@@ -1,0 +1,49 @@
+name: Bug
+description: Defeito em um comportamento que já existe.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use para algo que funcionava, ou deveria funcionar, e não funciona.
+        Funcionalidade nova ou melhoria vai no formulário Enhancement.
+        Não cole segredos, senhas, tokens nem dados pessoais.
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Resultado esperado
+    validations:
+      required: true
+  - type: textarea
+    id: obtido
+    attributes:
+      label: Resultado obtido
+      description: O que aconteceu, com a mensagem de erro quando houver.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduzir
+    attributes:
+      label: Como reproduzir
+      description: Passos, ambiente (local, homologação, produção) e versão ou commit.
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: evidencias
+    attributes:
+      label: Logs e saídas
+      description: Trechos relevantes, sem segredos.
+      render: shell
+    validations:
+      required: false
+  - type: textarea
+    id: pronto
+    attributes:
+      label: Critério de pronto
+      description: Como saber que o defeito foi corrigido.
+    validations:
+      required: true

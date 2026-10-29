@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Fluxo de contribuição
+    url: https://github.com/assembleiarr/app-catalog/blob/main/docs/padroes/fluxo-de-contribuicao.md
+    about: Issues, branches, commits, PRs e merge nos repos de apps (acesso para membros da org).
+  - name: Fluxo de iterações
+    url: https://github.com/assembleiarr/app-catalog/blob/main/docs/padroes/fluxo-de-iteracoes.md
+    about: Como planejar trabalho com várias etapas (acesso para membros da org).
