@@ -1,0 +1,43 @@
+name: Iteração
+description: Issue mãe de uma iteração planejada em iterations/.
+title: "[NNN] "
+labels: [iteration]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Uma issue por iteração, nunca uma por etapa. Os arquivos em
+        `iterations/NNN-assunto/` são a fonte da verdade; esta issue espelha a
+        tabela de etapas. Abra esta issue só depois que a proposta da iteração
+        foi confirmada.
+  - type: input
+    id: caminho
+    attributes:
+      label: Plano da iteração
+      placeholder: iterations/NNN-assunto/
+    validations:
+      required: true
+  - type: textarea
+    id: objetivo
+    attributes:
+      label: Objetivo
+      description: O resultado esperado, em uma ou duas frases.
+    validations:
+      required: true
+  - type: textarea
+    id: etapas
+    attributes:
+      label: Etapas
+      description: Espelhe a tabela de etapas. A issue fica aberta até a última etapa entrar.
+      value: |
+        - [ ] 01:
+        - [ ] 02:
+    validations:
+      required: true
+  - type: input
+    id: base
+    attributes:
+      label: Branch de integração
+      placeholder: lab ou main
+    validations:
+      required: true

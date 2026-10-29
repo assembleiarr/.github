@@ -1,0 +1,41 @@
+name: Enhancement
+description: Funcionalidade nova ou melhoria que cabe em uma issue.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Escreva o título como o resultado esperado, não como a tarefa.
+        Trabalho com várias etapas é uma iteração: use o formulário Iteração.
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto
+      description: Por que isso é necessário e de onde veio a necessidade.
+    validations:
+      required: true
+  - type: textarea
+    id: fazer
+    attributes:
+      label: O que fazer
+    validations:
+      required: true
+  - type: textarea
+    id: fora
+    attributes:
+      label: Fora de escopo
+    validations:
+      required: false
+  - type: textarea
+    id: relacionadas
+    attributes:
+      label: Issues relacionadas
+      description: Por exemplo, a issue mãe de uma iteração (assembleiarr/<repo>#N).
+    validations:
+      required: false
+  - type: textarea
+    id: pronto
+    attributes:
+      label: Critério de pronto
+    validations:
+      required: true
