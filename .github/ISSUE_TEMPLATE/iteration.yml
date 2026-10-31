@@ -1,4 +1,4 @@
-name: Iteração
+name: Iteration
 description: Issue mãe de uma iteração planejada em iterations/.
 title: "[NNN] "
 labels: [iteration]
@@ -11,21 +11,21 @@ body:
         tabela de etapas. Abra esta issue só depois que a proposta da iteração
         foi confirmada.
   - type: input
-    id: caminho
+    id: plan-path
     attributes:
       label: Plano da iteração
       placeholder: iterations/NNN-assunto/
     validations:
       required: true
   - type: textarea
-    id: objetivo
+    id: goal
     attributes:
       label: Objetivo
       description: O resultado esperado, em uma ou duas frases.
     validations:
       required: true
   - type: textarea
-    id: etapas
+    id: steps
     attributes:
       label: Etapas
       description: Espelhe a tabela de etapas. A issue fica aberta até a última etapa entrar.
@@ -35,7 +35,7 @@ body:
     validations:
       required: true
   - type: input
-    id: base
+    id: base-branch
     attributes:
       label: Branch de integração
       placeholder: lab ou main

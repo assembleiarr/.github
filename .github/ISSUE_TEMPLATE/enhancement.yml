@@ -6,35 +6,35 @@ body:
     attributes:
       value: |
         Escreva o título como o resultado esperado, não como a tarefa.
-        Trabalho com várias etapas é uma iteração: use o formulário Iteração.
+        Trabalho com várias etapas é uma iteração: use o formulário Iteration.
   - type: textarea
-    id: contexto
+    id: context
     attributes:
       label: Contexto
       description: Por que isso é necessário e de onde veio a necessidade.
     validations:
       required: true
   - type: textarea
-    id: fazer
+    id: todo
     attributes:
       label: O que fazer
     validations:
       required: true
   - type: textarea
-    id: fora
+    id: out-of-scope
     attributes:
       label: Fora de escopo
     validations:
       required: false
   - type: textarea
-    id: relacionadas
+    id: related
     attributes:
       label: Issues relacionadas
       description: Por exemplo, a issue mãe de uma iteração (assembleiarr/<repo>#N).
     validations:
       required: false
   - type: textarea
-    id: pronto
+    id: done-criteria
     attributes:
       label: Critério de pronto
     validations:
