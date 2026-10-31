@@ -1,15 +1,15 @@
-name: Padrão
+name: Standard
 description: Aplicar neste repo um padrão do app-catalog.
-labels: [padrao]
+labels: [standard]
 body:
   - type: markdown
     attributes:
       value: |
-        Issues de padrão que valem para vários apps são idênticas em todos os
-        repos: mesmo título, mesmo corpo e mesma label. Só a seção
+        Issues com a label `standard` que valem para vários apps são idênticas
+        em todos os repos: mesmo título, mesmo corpo e mesma label. Só a seção
         "Notas deste repo" muda.
   - type: input
-    id: padrao
+    id: standard-doc
     attributes:
       label: Padrão
       description: Caminho do documento no app-catalog.
@@ -17,26 +17,26 @@ body:
     validations:
       required: true
   - type: input
-    id: mae
+    id: parent-issue
     attributes:
       label: Issue mãe
       placeholder: assembleiarr/app-catalog#N
     validations:
       required: false
   - type: textarea
-    id: fazer
+    id: todo
     attributes:
       label: O que fazer
     validations:
       required: true
   - type: textarea
-    id: pronto
+    id: done-criteria
     attributes:
       label: Critério de pronto
     validations:
       required: true
   - type: textarea
-    id: notas
+    id: repo-notes
     attributes:
       label: Notas deste repo
       description: O que é específico deste repo. Deixe em branco se não houver.
