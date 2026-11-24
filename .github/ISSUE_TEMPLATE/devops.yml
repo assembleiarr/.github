@@ -1,0 +1,42 @@
+name: Devops
+description: Automação de entrega, como CI, CD, gates do pipeline, publicação e deploy.
+labels: [devops]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Escreva o título como o resultado esperado, não como a tarefa.
+        Vulnerabilidade ou hardening é Security. Provisionar runner, host, registry ou
+        ambiente é infraestrutura: abra a issue no repo dono, no al-rr.
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto
+      description: Por que isso é necessário. Inclua o link do run ou do log, se houver.
+    validations:
+      required: true
+  - type: textarea
+    id: todo
+    attributes:
+      label: O que fazer
+    validations:
+      required: true
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Fora de escopo
+    validations:
+      required: false
+  - type: textarea
+    id: related
+    attributes:
+      label: Issues relacionadas
+      description: Por exemplo, a issue mãe de uma iteração (assembleiarr/<repo>#N).
+    validations:
+      required: false
+  - type: textarea
+    id: done-criteria
+    attributes:
+      label: Critério de pronto
+    validations:
+      required: true
