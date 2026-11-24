@@ -8,6 +8,9 @@ body:
         Issues com a label `standard` que valem para vários apps são idênticas
         em todos os repos: mesmo título, mesmo corpo e mesma label. Só a seção
         "Notas deste repo" muda.
+
+        Depois de criar, acrescente um label de tipo: `enhancement`, `devops`,
+        `security` ou `bug`. Por exemplo, adotar o `ci.yml` é `standard` + `devops`.
   - type: input
     id: standard-doc
     attributes:
